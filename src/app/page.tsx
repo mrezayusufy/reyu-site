@@ -1,102 +1,45 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
+import Image from 'next/image'
+import SocialMediaIcon from './components/social-media-icon'
+import Services from './components/services'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className={styles.hero}>
+        {/* social media */}
+        <div className={styles.socialMediaWrapper}>
+          <ul className={styles.socialMedia}>
+            <li><SocialMediaIcon link="https://facebook.com/reyu443" title="facebook" src="/facebook.svg" /></li>
+            <li><SocialMediaIcon link="https://github.com/mrezayusufy" title="github" src="/github.svg" /></li>
+            <li><SocialMediaIcon link="https://linkedin.com/in/mrezayusufy" title="linkedin" src="/linkedin_circled.svg" /></li>
+            <li><SocialMediaIcon link="https://medium.com/@mrezayusufy" title="medium" src="/medium.svg" /></li>
+            <li><SocialMediaIcon link="https://t.com/mrezayusufy" title="telegram" src="/telegram_app.svg" /></li>
+            <li><SocialMediaIcon link="https://twitter.com/mrezayusufy" title="twitter" src="/twitter_circled.svg" /></li>
+          </ul>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        {/* title */}
+        <div className={styles.titleWrapper}>
+          <h1 className={styles.title}>Hello, I am M.Reza Yusufy a <br /> {"<Web Developer/>"}</h1>
+          <p>it is a long established fact that a reader will be distracted by the readable content of a page layout</p>
+          <div>
+            <button className={styles.btnFuncy}>Browse Projects</button>
+          </div>
+        </div>
+        {/* avatar */}
+        <div className={styles.avatarWrapper}>
+          <div className={styles.rightBox}></div>
+          <Image className={styles.avatar} src="/avatar.png" alt="avatar" width="400" height="400" />
+          <div className={styles.leftBox}></div>
+          <div className={styles.miniLeftBox}></div>
+          <div className={styles.miniRightBox}></div>
+        </div>
+      </section>
+      <Services/>
+      <section>this is a test</section>
+    </>
   )
 }
