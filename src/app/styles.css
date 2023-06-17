@@ -1,11 +1,3 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-}
-
 .description {
   display: inherit;
   justify-content: inherit;
@@ -235,6 +227,9 @@
   height: 100svh;
   padding-block: 9rem;
 }
+.svh-100 {
+  height: 100svh;
+}
 
 .socialMedia {
   display: grid;
@@ -245,37 +240,39 @@
   display: flex;
   align-items: center;
 }
-.avatarWrapper {
-  display: flex;
-  position: relative;
-}
 
 .avatar {
   position: relative;
   display: flex;
 }
-
-.avatarWrapper::before {
-  content: " ";
+.box {
+  content: "";
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
-  right: 0;
-  background-color: mediumslateblue;
-  height: 100%;
-  border-radius: 0.3rem;
-  width: 100%;
+  left: 0;
+  background-color: #7b68ee;
   transform: skewX(10deg);
-}
-.avatarWrapper::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: 1px solid #000;
-  height: 100%;
-  width: 100%;
   border-radius: 0.3rem;
-  transform: skewX(-10deg) scale(0.95);
+  z-index: 1;
+}
+.outline {
+  position: relative;
+  z-index: 2;
+}
+.outline::after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: .3rem;
+  background-color: transparent;
+  transform: skewX(-10deg) scale(.9);
+  border: 1px solid #000;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 .rightBox {
   content: "";
@@ -425,46 +422,22 @@
 .thirdPart span {
   font-size: 0.8rem;
   color: #9b9b9b;
-}
-.btn {
-  color: #fff;
-  background-color: var(--primary-color);
-  padding-inline: 1rem;
-  padding-block: 1.2rem;
-  border-radius: 0.4rem;
-}
+} 
+
 .columns {
   display: flex;
   flex-direction: row;
   gap: 110px;
 }
 
-.skew {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  transform: skewX(10deg);
-  overflow: hidden;
-  border-radius: 0.5rem;
-  border: 1px solid;
-}
-.skew > * {
-  width: 560px;
-  position: absolute;
-  top: 0;
-  transform: skewX(-10deg);
-  left: 0;
-  translate: -140px 0;  
-}
 
-.photo {
-  position: relative;
-}
+
 .shape {
   position: absolute;
   top: 0;
   z-index: -1;
 }
+
 .shape::before {
   content: " ";
   width: 300px;
@@ -477,4 +450,8 @@
   z-index: 1;
   transform: skewX(-10deg);
   overflow: hidden;
+}
+
+pre {
+  font-family: var(--bs-font-monospace) !important;
 }
