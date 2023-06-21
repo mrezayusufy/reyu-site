@@ -1,14 +1,10 @@
-@font-face {
-  font-family: "Roboto Regular";
-  src: url("/Roboto-Regular.woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+@import url("node_modules/bootstrap/dist/css/bootstrap.css");
 
 :root {
+  --primary: rgb(255, 59, 59);
   --deg: 255deg 90deg;
   --color: rgb(255, 59, 59);
+  --primary-light-color: rgb(243, 112, 103);
   --bs-primary: hsl(3, 85%, 62%) !important;
   --bs-primary-rgb: 240, 84, 76;
   --max-width: 1100px;
@@ -128,6 +124,13 @@ button {
     color-scheme: dark;
   }
 }
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("/Roboto-Regular.woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 /** container */
 .container {
@@ -139,9 +142,10 @@ button {
 }
 
 .full-bleed {
-  box-shadow: 0 0 0 100vw #fefefe;
+  --bleed-color: #fefefe;
+  box-shadow: 0 0 0 100vw var(--bleed-color);
   clip-path: inset(0 -100vw);
-  background-color: #fefefe;
+  background-color: var(--bleed-color);
 }
 
 /** #buttons */
@@ -297,4 +301,40 @@ section {
 }
 .link-active::after {
   height: 2px;
-} 
+}
+.z-0 {
+  z-index: 0;
+}
+.z-1 {
+  z-index: 10;
+}
+.z-2 {
+  z-index: 20;
+}
+.obj-cover {
+  object-fit: cover;
+}
+.obj-contain {
+  object-fit: contain;
+}
+.text-primary {
+  color: var(--primary-color) !important;
+}
+.aspect-ratio-1 {
+  aspect-ratio: 1;
+}
+.shadow-double {
+  box-shadow: 0px 0px 0px 15px rgb(240 84 76 / 20%), 0 0 0 30px rgb(240 84 76 /20%);
+}
+.bg-purple {
+  background-color: rgb(138, 100, 249);
+}
+.top-1 {
+  top: 1rem;
+}
+.start-1 {
+  left: 1rem;
+}
+.bg-primary-light {
+  background-color: var(--primary-light-color);
+}

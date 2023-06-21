@@ -11,47 +11,51 @@ export default function AboutMe() {
   return (
     <section>
       <main className="columns">
-        <div className="position-relative">
-          <div className="skew">  
-            <Image src="/profile.png" width={300} height={400} alt="Profile" />
+        <div className="col">
+          <div className="position-relative">
+            <div className="skew">
+              <Image src="/profile.png" width={300} height={400} alt="Profile" />
+            </div>
+            <div className="shape"></div>
           </div>
-          <div className="shape"></div>
         </div>
         <div className="col">
-          <Subtitle text="about me"/>
-          <Title text="I can develop anything for your needs"/>
-          <ul className="d-flex flex-column gap-3">
-            <li className="d-flex gap-3 align-items-center">
-              <div >
-                <div className='circle-per' style={red}>
-                  <div>85%</div>
+          <div className='d-flex flex-column'>
+            <Subtitle text="about me"/>
+            <Title text="I can develop anything for your needs"/>
+            <ul className="d-flex flex-column gap-3 mt-3">
+              <li className="d-flex gap-3 align-items-center">
+                <div >
+                  <div className='circle-per' style={red}>
+                    <div>85%</div>
+                  </div>
                 </div>
-              </div>
-              <div >
-                <Text text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quas, consequatur placeat ipsum iure eaque aliquid aperiam."/>
-              </div>
-            </li>
-            <li className="d-flex gap-3 align-items-center">
-              <div >
-                <div className='circle-per' style={yellow}>
-                  <div>70%</div>
+                <div >
+                  <Text text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quas, consequatur placeat ipsum iure eaque aliquid aperiam."/>
                 </div>
-              </div>
-              <div >
-                <Text text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quas, consequatur placeat ipsum iure eaque aliquid aperiam."/>
-              </div>
-            </li>
-            <li className="d-flex gap-3 align-items-center">
-              <div >
-                <div className='circle-per' style={mediumslateblue}>
-                  <div>90%</div>
+              </li>
+              <li className="d-flex gap-3 align-items-center">
+                <div >
+                  <div className='circle-per' style={yellow}>
+                    <div>70%</div>
+                  </div>
                 </div>
-              </div>
-              <div >
-                <Text text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quas, consequatur placeat ipsum iure eaque aliquid aperiam."/>
-              </div>
-            </li>
-          </ul>
+                <div >
+                  <Text text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quas, consequatur placeat ipsum iure eaque aliquid aperiam."/>
+                </div>
+              </li>
+              <li className="d-flex gap-3 align-items-center">
+                <div >
+                  <div className='circle-per' style={mediumslateblue}>
+                    <div>90%</div>
+                  </div>
+                </div>
+                <div >
+                  <Text text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quas, consequatur placeat ipsum iure eaque aliquid aperiam."/>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </main>
     </section>

@@ -1,9 +1,11 @@
+
 type IProps = {
   columns: number ,
   gap: number,
   children: any
 } 
-export default function Mosanry ({columns, gap, children}: IProps) {
+export default function Masonry ({columns, gap, children}: IProps) {
+  
   const columnWrapper: any = {};
   const result = [];
   for (let i = 0; i < columns; i++) {
@@ -28,8 +30,11 @@ export default function Mosanry ({columns, gap, children}: IProps) {
       </div>
     );
   }
+  
+  
   return (
     <div style={{ display: 'flex' }}>
+    
       {result}
      </div>
    );
