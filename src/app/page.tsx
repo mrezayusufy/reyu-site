@@ -5,6 +5,7 @@ import Hero from './components/hero'
 import PortfolioWorks from './components/portfolio-works';
 import Feedback from './components/feedback';
 import Avarage from './components/avarage';
+import CommonQuestion from './components/common-question';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <PortfolioWorks/>
       <Feedback/>
       <Avarage/>
+      <CommonQuestion/>
     </>
   )
 }
