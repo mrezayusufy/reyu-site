@@ -23,7 +23,7 @@ export default function ContactWithMe() {
             <input type="text" className="form-control" placeholder="Mail Address"/>
           </div>
           <textarea name="message" id="message" cols={30} rows={10} className="form-control mt-3" placeholder="your message"></textarea>
-          <button className="btn btn-primary mt-3 text-capitalize">send me message</button>
+          <button className="btn btn-primary btn-lg fs-7 mt-3 text-capitalize">send me message</button>
           <div>
           </div>
         </div>
