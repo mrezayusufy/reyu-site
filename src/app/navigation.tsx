@@ -34,7 +34,7 @@ export default function Navigation() {
         </li>
       </ul>
       <div>
-        <button className='btn btn-light btn-lg fs-7 text-capitalize border-1 border-secondary-subtle'>download CV</button>
+        <button className='btn btn-light px-4 py-2 fs-7 text-capitalize border border-light-subtle border-opacity-25'>download CV</button>
       </div>
     </nav>
   )
