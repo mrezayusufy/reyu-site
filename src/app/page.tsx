@@ -6,6 +6,8 @@ import PortfolioWorks from './components/portfolio-works';
 import Feedback from './components/feedback';
 import Avarage from './components/avarage';
 import CommonQuestion from './components/common-question';
+import ContactWithMe from './components/contact-with-me';
+import BlogNews from './components/blog-news';
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <Feedback/>
       <Avarage/>
       <CommonQuestion/>
+      <ContactWithMe/>
+      <BlogNews/>
     </>
   )
 }

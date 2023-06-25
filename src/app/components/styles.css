@@ -139,3 +139,26 @@
   translate: 0 0;
   transition: translate 0.3s ease-in-out;
 }
+summary::marker {
+  content: none;
+}
+summary::after {
+  content: "+";
+}
+details[open] > summary::after {
+  content: "-";
+}
+.card:hover {
+  box-shadow: 0 10px 20px 0px rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card {
+  aspect-ratio: 4/5;
+  width: 300px;
+}
+.text-balance {
+  text-wrap: balance;
+}
+.font-serif {
+  font-family: serif !important;
+}
