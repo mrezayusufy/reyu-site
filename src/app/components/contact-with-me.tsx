@@ -24,8 +24,6 @@ export default function ContactWithMe() {
           </div>
           <textarea name="message" id="message" cols={30} rows={10} className="form-control mt-3" placeholder="your message"></textarea>
           <button className="btn btn-primary py-3 px-4 text-capitalize fs-6 mt-3">send me message</button>
-          <div>
-          </div>
         </div>
       </div>
     </section>

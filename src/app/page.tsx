@@ -8,6 +8,7 @@ import Avarage from './components/avarage';
 import CommonQuestion from './components/common-question';
 import ContactWithMe from './components/contact-with-me';
 import BlogNews from './components/blog-news';
+import Footer from './components/footer';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <CommonQuestion/>
       <ContactWithMe/>
       <BlogNews/>
+      <Footer/>
     </>
   )
 }
