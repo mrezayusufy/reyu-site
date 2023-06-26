@@ -15,11 +15,11 @@ export default function CardBlog({ featureImage, category, title, date, user, ur
       <Image className="obj-cover" width={300} height={200} src={featureImage}  alt={title} />
       <div className="position-absolute top-0 m-2 px-2 py-1 bg-dark text-light fs-7 rounded-1 text-capitalize">{category}</div>
       <div className="d-flex px-3 justify-content-between text-capitalize text-black-50 fs-7 mt-2">
-        <div>
+        <div className="d-flex align-items-center">
           <Image src={"/calendar.svg"} width={16} height={16} alt="date" className="opacity-50"/>
           {date}
         </div>
-        <div>
+        <div className="d-flex align-items-center">
           <Image src={"/customer.svg"} width={16} height={16} alt="user" className="opacity-50"/> {user}
         </div>
       </div>

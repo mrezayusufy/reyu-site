@@ -5,7 +5,7 @@ import Title from "./title";
 export default function BlogNews() {
   return (
     <section className="full-bleed text-center">
-      <Subtitle text="Blogs and news" />
+      <Subtitle text="Blogs & news" />
       <Title text="latest from blogs" />
       <div className="d-flex gap-3">
         <CardBlog
