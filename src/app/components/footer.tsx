@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer(){
-  return <section className="d-flex flex-column">
+  return <section className="d-flex flex-column pb-0">
     <div className="d-flex">
       <div className="col gap-0">
         <Image src={"/profile.png"} width={84} height={84} alt="profile" className="obj-cover rounded-pill border border-3 border-primary mb-4"/>
@@ -34,6 +34,14 @@ export default function Footer(){
       </div>
       
     </div>
-    <div>footer nav</div>
+    <div className="border-top border-opacity-10 border-primary mt-5 py-3">
+        <div className="d-flex gap-4 text-capitalize text-black-50">
+          <Link href={"/about"}>about</Link>
+          <Link href={"/works"}>works</Link>
+          <Link href={"/services"}>services</Link>
+          <Link href={"/contact"}>contact</Link>
+          <div className="ms-auto">&copy; All rights reserved. Power by Nextjs 13</div>
+        </div>
+      </div>
   </section>
 }
