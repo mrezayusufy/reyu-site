@@ -16,7 +16,7 @@ export default function Hero() {
     <div className="col-5 d-flex flex-column align-items-start gap-3">
       <h1 className="fw-bold title lh-base">{"Hello, I'm M.Reza Yusufy a"} <br /> <pre>{"<WebDeveloper/>"}</pre></h1>
       <Text text="it is a long established fact that a reader will be distracted by the readable content of a page layout"/>
-      <button className="btn btn-primary btn-lg fs-7 ">Browse Projects</button>
+      <button className="btn btn-primary btn-lg fs-6 ">Browse Projects</button>
     </div>
     <div className="position-relative" style={{ height: 350, width: 350}}>
       <div className="box"></div>

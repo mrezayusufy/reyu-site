@@ -25,7 +25,7 @@ export default function CardBlog({ featureImage, category, title, date, user, ur
       </div>
       <p className="fw-bold fs-5 my-3 text-balance mx-3 font-serif fw-bold text-black text-capitalize">{title}</p>
       <div className="d-block me-auto mx-3 my-1">
-        <Link href={url} className=" btn btn-primary text-capitalize">read more</Link>
+        <Link href={url} className=" btn btn-primary text-capitalize px-3">read more</Link>
       </div>
     </div>
   </div>

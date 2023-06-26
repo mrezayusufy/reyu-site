@@ -30,7 +30,7 @@ export default function Services() {
         <Title text="Which services I will provide for you" />
         <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae natus provident neque ab" />
         <div>
-          <button className="btn btn-primary py-3 fs-7">Explore All Services</button>
+          <button className="btn btn-primary py-3 px-4 text-capitalize fs-6">Explore All Services</button>
         </div>
       </div>
     </div>
