@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='container'>
-        <header>
+        <header className='position-absolute start-0 top-0 w-100'>
           <Navigation/>
         </header>
         <main>{children}</main>
