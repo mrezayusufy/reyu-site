@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Hero/>
-      <Services/>
+      {/* <Services/>
       <AboutMe/>
       <PortfolioWorks/>
       <Feedback/>
@@ -22,7 +22,7 @@ export default function Home() {
       <CommonQuestion/>
       <ContactWithMe/>
       <BlogNews/>
-      <Footer/>
+      <Footer/> */}
     </>
   )
 }

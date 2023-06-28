@@ -2,8 +2,16 @@ import Image from "next/image";
 import SocialMediaIcon from "./social-media-icon";
 import Text from "./text";
 export default function Hero() {
-  return <section className="d-flex justify-content-between align-items-center py-5 svh-100">
-    <div className="col-1">
+  return <section className="d-flex flex-column flex-lg-row-reverse position-relative justify-content-between pt-0 align-items-center py-5 svh-100">
+    <div className="position-relative h-100 w-100 hero-image" >
+      <div className="box"></div>
+      <div className="outline h-100"><Image sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/avatar.png" fill alt="profile" /></div>
+      <div className="leftBox"></div>
+      <div className="rightBox"></div>
+      <div className="miniLeftBox"></div>
+      <div className="miniRightBox"></div>
+    </div>
+    <div className="position-absolute top-50 start-0 translate-middle ms-3">
       <div className="d-flex flex-column justify-content-around">
         <div><SocialMediaIcon src="/linkedin_circled.svg"/></div>
         <div><SocialMediaIcon src="/github.svg"/></div>
@@ -13,18 +21,12 @@ export default function Hero() {
         <div><SocialMediaIcon src="/twitter_circled.svg"/></div>
       </div>
     </div>
-    <div className="col-5 d-flex flex-column align-items-start gap-3">
-      <h1 className="fw-bold title lh-base">{"Hello, I'm M.Reza Yusufy a"} <br /> <pre>{"<WebDeveloper/>"}</pre></h1>
-      <Text text="it is a long established fact that a reader will be distracted by the readable content of a page layout"/>
-      <button className="btn btn-primary btn-lg fs-6 ">Browse Projects</button>
+    <div className="d-block ms-5 me-4">
+      <div className="fs-1 fw-bold">Hello,<br/> I&apos;m M.Reza Yusufy a <pre>{"<WebDeveloper/>"}</pre></div>
+      <div className="fs-7 text-black-50 text-balance mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sit eius quaerat excepturi tempora, recusandae.</div>
+      <button className="btn btn-primary btn-lg mt-5">Browse Projects</button>
     </div>
-    <div className="position-relative" style={{ height: 350, width: 350}}>
-      <div className="box"></div>
-      <div className="outline"><Image src="/avatar.png" width={350} height={350} alt="profile"/></div>
-      <div className="leftBox"></div>
-      <div className="rightBox"></div>
-      <div className="miniLeftBox"></div>
-      <div className="miniRightBox"></div>
-    </div>
+ 
+    
   </section>
 }

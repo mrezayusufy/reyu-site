@@ -101,7 +101,6 @@ strong {
 
 html,
 body {
-  max-width: 100vw;
   color: rgb(var(--foreground-rgb));
   background-color: var(--background-color);
 }
@@ -133,13 +132,6 @@ button {
 }
 
 /** container */
-.container {
-  width: min(calc(80% - 2rem), 60rem);
-  margin-inline: auto;
-  position: relative;
-  z-index: 1;
-  background-color: transparent;
-}
 
 .full-bleed {
   --bleed-color: #fefefe;
@@ -147,7 +139,15 @@ button {
   clip-path: inset(0 -100vw);
   background-color: var(--bleed-color);
 }
-
+.hero-image {
+  aspect-ratio: 1/1;
+  scale: 0.8;
+}
+@media (width <= 360px) {
+  .hero-image{
+    scale: 0.8;
+  }
+}
 /** #buttons */
 .btn-lg {
   --bs-btn-padding-y: 0.99rem !important;
@@ -215,6 +215,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
+
 }
 
 .menu {
@@ -311,6 +312,12 @@ section {
 .z-2 {
   z-index: 20;
 }
+.z-3 {
+  z-index: 30;
+}
+.z-1000 {
+  z-index: 1000;
+}
 .obj-cover {
   object-fit: cover;
 }
@@ -321,7 +328,7 @@ section {
   color: var(--primary-color) !important;
 }
 .aspect-ratio-1 {
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
 }
 .shadow-double {
   box-shadow: 0px 0px 0px 15px rgb(240 84 76 / 20%), 0 0 0 30px rgb(240 84 76 /20%);
@@ -344,4 +351,7 @@ section {
 }
 .form-control {
   border-color: var(--color);
+}
+.backdrop-blur {
+  backdrop-filter: blur(5px);
 }
